@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"GMD3D11",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -12,10 +12,12 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Examples","folderPath":"folders/Examples.yy","name":"Examples","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GeometryShader","folderPath":"folders/Examples/GeometryShader.yy","name":"GeometryShader","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"TessellationShader","folderPath":"folders/Examples/TessellationShader.yy","name":"TessellationShader","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"InstancedRendering","folderPath":"folders/Examples/InstancedRendering.yy","name":"InstancedRendering","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"VTF","folderPath":"folders/Examples/VTF.yy","name":"VTF","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GMD3D11","folderPath":"folders/GMD3D11.yy","name":"GMD3D11","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"GMD3D11.dll","CopyToMask":-1,"filePath":"datafiles","name":"GMD3D11.dll","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"rubber_duck_toy_1k.bin","CopyToMask":-1,"filePath":"datafiles","name":"rubber_duck_toy_1k.bin","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -24,21 +26,25 @@
     {"$GMIncludedFile":"","%Name":"PassthroughGS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"PassthroughGS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"PassthroughPS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"PassthroughPS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"PassthroughVS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"PassthroughVS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"TessPS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"TessPS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"TessVS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"TessVS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"TestPS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"TestPS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"TestVS.hlsl","CopyToMask":-1,"filePath":"datafiles/shaders","name":"TestVS.hlsl","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"GMD3D11",
   "resources":[
     {"id":{"name":"OGeometryShader","path":"objects/OGeometryShader/OGeometryShader.yy",},},
     {"id":{"name":"OInstancedRendering","path":"objects/OInstancedRendering/OInstancedRendering.yy",},},
+    {"id":{"name":"OTessellationShader","path":"objects/OTessellationShader/OTessellationShader.yy",},},
     {"id":{"name":"OVTF","path":"objects/OVTF/OVTF.yy",},},
     {"id":{"name":"RmGeometryShader","path":"rooms/RmGeometryShader/RmGeometryShader.yy",},},
     {"id":{"name":"RmInstancedRendering","path":"rooms/RmInstancedRendering/RmInstancedRendering.yy",},},
+    {"id":{"name":"RmTessellationShader","path":"rooms/RmTessellationShader/RmTessellationShader.yy",},},
     {"id":{"name":"RmVTF","path":"rooms/RmVTF/RmVTF.yy",},},
     {"id":{"name":"__d3d11_cbuffer","path":"scripts/__d3d11_cbuffer/__d3d11_cbuffer.yy",},},
     {"id":{"name":"__d3d11_generated","path":"scripts/__d3d11_generated/__d3d11_generated.yy",},},
@@ -54,6 +60,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"RmTessellationShader","path":"rooms/RmTessellationShader/RmTessellationShader.yy",},},
     {"roomId":{"name":"RmInstancedRendering","path":"rooms/RmInstancedRendering/RmInstancedRendering.yy",},},
     {"roomId":{"name":"RmVTF","path":"rooms/RmVTF/RmVTF.yy",},},
     {"roomId":{"name":"RmGeometryShader","path":"rooms/RmGeometryShader/RmGeometryShader.yy",},},

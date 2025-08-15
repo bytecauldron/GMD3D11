@@ -1,9 +1,11 @@
 {
   "FolderOrderSettings":[
     {"name":"GeometryShader","order":2,"path":"folders/Examples/GeometryShader.yy",},
+    {"name":"TessellationShader","order":4,"path":"folders/Examples/TessellationShader.yy",},
     {"name":"InstancedRendering","order":1,"path":"folders/Examples/InstancedRendering.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"OTessellationShader","order":1,"path":"objects/OTessellationShader/OTessellationShader.yy",},
     {"name":"RmGeometryShader","order":1,"path":"rooms/RmGeometryShader/RmGeometryShader.yy",},
     {"name":"RmInstancedRendering","order":1,"path":"rooms/RmInstancedRendering/RmInstancedRendering.yy",},
     {"name":"RmVTF","order":1,"path":"rooms/RmVTF/RmVTF.yy",},
