@@ -8,6 +8,18 @@ if(keyboard_check_pressed(vk_f2))
 
 duck_rotation += 1;
 
+// Tessellation controls
+if (keyboard_check_pressed(vk_left)) {
+	tess_level_index = max(0, tess_level_index - 1);
+	tess_factor = tess_levels[tess_level_index];
+	show_debug_message($"Tessellation: x{tess_factor}");
+}
+if (keyboard_check_pressed(vk_right)) {
+	tess_level_index = min(array_length(tess_levels) - 1, tess_level_index + 1);
+	tess_factor = tess_levels[tess_level_index];
+	show_debug_message($"Tessellation: x{tess_factor}");
+}
+
 var _mouseX = window_mouse_get_x();
 var _mouseY = window_mouse_get_y();
 
@@ -24,7 +36,7 @@ mouseLastY = _mouseY;
 var _forward = keyboard_check(ord("W")) - keyboard_check(ord("S"));
 var _right = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var _up = keyboard_check(ord("E")) - keyboard_check(ord("Q"));
-var _speed = keyboard_check(vk_shift) ? 20 : 10;
+var _speed = keyboard_check(vk_shift) ? 3 : 1;
 
 x += lengthdir_x(1, direction) * _forward * _speed;
 y += lengthdir_y(1, direction) * _forward * _speed;
